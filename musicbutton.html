@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        @media (orientation:portrait) {
+            .musicbutton {
+                position: fixed;
+                top: 2.5vw;
+                right: 5vw;
+                z-index: 2;
+
+            }
+        }
+
+        @media (orientation:landscape) {
+            .musicbutton {
+                position: fixed;
+                bottom: 2.5vw;
+                right: 5vw;
+                z-index: 2;
+            }
+        }
+
+        .volume {
+            background-color: #FFFFFF;
+            width: 0vw;
+            transition: width 0.4s;
+            position: absolute;
+            top: 0;
+            right: 1.5vw;
+            height: 4vw;
+            border-top-left-radius: 75vw;
+            border-bottom-left-radius: 75vw;
+            transform-origin: right center;
+            z-index: 1;
+            border: 0.3vw solid #000000;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .musicbutton:hover .volume {
+            width: 25vw;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- BACKGROUND MUSIC -->
+    <div style="width: 4vw; height: 4vw;" class="musicbutton">
+        <img src="musicicon.png" alt="musicicon" style="width: 100%; height: 100%; z-index: 2; position: relative;">
+        <div class="volume"> 
+            <audio controls autoplay loop style="width: 100%; height: 100%;"> 
+                <source src="darkworld.mp3" type="audio/mp3"> 
+                Your browser does not support the audio element. 
+            </audio>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    a
+</body>
+</html>
